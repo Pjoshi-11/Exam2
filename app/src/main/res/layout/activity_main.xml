@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:textStyle="bold"
+        android:gravity="center"
+        style="@style/HeaderTextStyle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a city to get the current weather information."
+        android:gravity="center"
+        style="@style/SubtitleTextStyle" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select_city"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnFetchWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Weather"
+        style="@style/ButtonStyle" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardStyle">
+
+        <TextView
+            android:id="@+id/tvWeatherInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weather Information"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:gravity="center" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
